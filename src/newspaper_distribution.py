@@ -37,7 +37,8 @@ centrist_sources = {
     "CBS News", "CNBC",
     "ABC News",
     "Reuters",
-    "USA Today"
+    "USA Today",
+    "New York Post"
 }
 
 right_sources = {

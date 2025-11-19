@@ -22,7 +22,8 @@ scores = {
     "www.theepochtimes.com": (34.45, 8.14),
     "The Wall Street Journal": (43.32, 4.16),
     "Buzzfeed": (39.93, -6.05),
-    "MSNBC": (34.57, -13.86)
+    "MSNBC": (34.57, -13.86),
+    "New York Post": (31.35, 9.37)
 }
 
 with open(os.path.join("..", "data", "final_dataset.json"), "r", encoding="utf-8") as f:
