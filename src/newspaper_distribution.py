@@ -4,7 +4,7 @@ import os
 import matplotlib.pyplot as plt
 
 # Load your JSON file
-with open(os.path.join("..", "data", "merged_articles3.json"), "r", encoding="utf-8") as f:
+with open(os.path.join("..", "data", "final_dataset.json"), "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # Extract newspaper titles
