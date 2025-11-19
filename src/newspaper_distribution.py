@@ -30,14 +30,14 @@ left_sources = {
     "Washington Post",
     "HuffPost", "Raw Story",
     "TheWrap",
-    "Buzzfeed"
 }
 
 centrist_sources = {
     "CBS News", "CNBC",
     "ABC News",
     "Reuters",
-    "USA Today"
+    "USA Today",
+    "Buzzfeed"
 }
 
 right_sources = {
