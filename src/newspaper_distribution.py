@@ -62,4 +62,5 @@ sizes = [left_count, centrist_count, right_count]
 plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct="%1.1f%%")
 plt.title("Political Leaning Distribution of Newspapers")
-plt.show()
+
+plt.savefig(os.path.join("..", "data", "data_plot", "political_leaning_distribution.png"))
