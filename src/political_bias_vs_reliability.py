@@ -2,9 +2,7 @@ import json
 import os
 import matplotlib.pyplot as plt
 
-# -----------------------------
-# Newspaper reliability & bias
-# -----------------------------
+
 scores = {
     "Washington Times": (33.46, 11.59),
     "TheWrap": (37.58, -5.98),
@@ -27,15 +25,10 @@ scores = {
     "MSNBC": (34.57, -13.86)
 }
 
-# -----------------------------
-# Load article dataset
-# -----------------------------
 with open(os.path.join("..", "data", "final_dataset.json"), "r", encoding="utf-8") as f:
     articles = json.load(f)
 
-# -----------------------------
-# Extract bias (x) & reliability (y)
-# -----------------------------
+
 bias_values = []
 reliability_values = []
 labels = []
@@ -48,13 +41,10 @@ for article in articles:
         reliability_values.append(reliability)
         labels.append(source)
 
-# -----------------------------
-# Create scatter plot
-# -----------------------------
+
 plt.figure(figsize=(10, 7))
 plt.scatter(bias_values, reliability_values)
 
-# Annotate each point
 for x, y, label in zip(bias_values, reliability_values, labels):
     plt.annotate(label, (x, y), textcoords="offset points", xytext=(5, 5))
 
@@ -65,9 +55,7 @@ plt.ylabel("Reliability Score")
 
 plt.grid(True, linestyle="--", alpha=0.5)
 
-# -----------------------------
-# Save plot
-# -----------------------------
+
 output_path = os.path.join("..", "data", "data_plot", "bias_vs_reliability.png")
 plt.savefig(output_path, dpi=300)
 
