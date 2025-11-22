@@ -3,7 +3,7 @@ import csv
 import os
 import re
 
-def first_sentences(text, n=4):
+def first_sentences(text, n=5):
     """
     Return the first n sentences of a text.
     """
